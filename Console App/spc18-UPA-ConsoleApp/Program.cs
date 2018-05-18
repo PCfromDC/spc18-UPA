@@ -45,8 +45,8 @@ namespace spc18_UPA_ConsoleApp
                     sb.Append("SELECT TOP(10) mail, city  ");
                     sb.Append("FROM pcDemo_SystemUsers ");
                     sb.Append("Where city is not null ");
-                    sb.Append("and UserEmail like '%@pcfromdc.com' ");
-                    sb.Append("or UserEmail like '%pcdemo.net'");
+                    sb.Append("and mail like '%@pcfromdc.com' ");
+                    sb.Append("or mail like '%pcdemo.net'");
                     String sql = sb.ToString();
 
                     using (SqlCommand command = new SqlCommand(sql, connection))
